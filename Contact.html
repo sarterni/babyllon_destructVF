@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="nav-menu">
+        <img src="../img/Babylon Destruct.png" alt="" class="navbar-image">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="NewsPage.html">News</a></li>
+        <!-- <li><a href="Library.html">Library</a></li> -->
+
+        <li><a class="active" href="Contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+
+        <div class="Restricted">
+
+            <input id="input-restricted" type="text" placeholder="Mot de passe"><br>
+            <a href="RestrictedAccess.html" style="text-decoration:none">
+                <button id="go-to-restrcted" disabled>Connectez vous</button>
+            </a>
+        </div>
+    </ul>
+
+    <div class="Formulaire-Conctact">
+        <h1>Contact</h1>
+        <form action="https://formspree.io/f/xbjevnze" method="POST">
+
+
+            <label for="fname">Prénom :</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Joe"><br>
+            <label for="lname">Nom :</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+
+            <h2>Ergonomie du site</h2>
+
+            <P>Comment trouvez vous l'ergonomie</P>
+            <input type="radio" id="Tres-Bonne" name="fav-ergo" value="TB">
+            <label for="Tres-Bonne">Très Bonne</label><br>
+            <input type="radio" id="Bonne" name="fav-ergo" value="B">
+            <label for="Bonne">Bonne</label><br>
+            <input type="radio" id="Mauvaise" name="fav-ergo" value="M">
+            <label for="Mauvaise">Mauvaise</label><br><br>
+
+            <p>Combien de temps restez vous sur notre site</p>
+            <input type="radio" id="-5-min" name="fav-time" value="TB">
+            <label for="-5-min">Très Bonne</label><br>
+            <input type="radio" id="Bonne" name="fav-time" value="B">
+            <label for="Bonne">Bonne</label><br>
+            <input type="radio" id="Mauvaise" name="fav-time" value="M">
+            <label for="Mauvaise">Mauvaise</label><br><br>
+
+
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
