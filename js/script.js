@@ -2,22 +2,20 @@ window.addEventListener('load', function () {
     console.log('All assets are loaded')
 
 
-    let images = new Array('Babylon Destruct copy.png', 'guitar-756326.jpg', 'diapo1.jpg', 'diapo2.jpg', 'diapo3.jpg', 'diapo4.jpg');
+    let images = ['Babylon Destruct copy.png', 'guitar-756326.jpg', 'diapo1.jpg', 'diapo2.jpg', 'diapo3.jpg', 'diapo4.jpg'];
+    let texts = ['logo', 'guitar-756326.jpg',  'diapo1.jpg', 'diapo2.jpg', 'diapo3.jpg', 'diapo4.jpg'];
     let i = 0;
     let diapo = document.getElementById('img');
+    let textDiapo = document.getElementById('places');
+    
     let timer = setInterval(function () {
         diapo.src = '../img/diapo/' + images[i];
+        textDiapo.innerHTML = texts[i];
         i++;
         if (i == images.length) i = 0;
     }, 5000);
 
-    let text = new Array('guitar-756326.jpg', 'diapo1.jpg', 'diapo2.jpg', 'diapo3.jpg', 'diapo4.jpg');
-    let textDiapo = document.getElementById('places');
-    let timerText = setInterval(function () {
-        textDiapo.innerHTML = text[i];
-        i++;
-        if (i == text.length) i = 0;
-    }, 5000);
+    
 
 
 
