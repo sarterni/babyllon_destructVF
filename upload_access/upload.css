@@ -17,50 +17,36 @@ body {
     border-radius: 7px;
 }
 
-.image-container{
-    width: 90%;
-    margin: 0 auto 30px auto;
-}
-.image-container img{
-    display: block;
-    position: relative;
-    max-width: 100%;
-    max-height: 400px;
-    margin: auto;
+.container h1 {
+    text-align: center;
 }
 
-.file-upload {
-    display: inline-flex;
+.container form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 15px;
 }
 
-.file-upload__input {
-    display: none;
+.container form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.file-upload__button {
-    -webkit-appearance: none;
-    background: #009879;
-    border-radius: 4px;
+.container form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: none;
-    outline: none;
-    padding: 0.5em 0.8em;
-    margin-right: 15px;
-    color: #ffffff;
-    font-size: 1em;
-    font-weight: bold;
+    border-radius: 5px;
+    background-color: #009879;
+    color: #fff;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-.file-upload__button:hover {
-    background: black
-}
-
-.file-upload__label {
-    max-width: 250px;
-    font-size: 0.95em;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+.container form button:hover {
+    background-color: #007a6e;
 }

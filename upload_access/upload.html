@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="upload.css">
     <title>Document</title>
 </head>
 <body>
-    <form id="uploadForm" action="upload.php" method="POST" enctype="multipart/form-data">
-        <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple accept="image/*">
-        <button class="file-upload__button" type="submit">Choisir une image</button>
-        <span class="file-upload__label"></span>
-    </form>
+    <div class="container">
+        <h1>Upload your files</h1>
+        <form id="uploadForm" action="upload.php" method="POST" enctype="multipart/form-data">
+            <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple accept="image/*">
+            <button class="file-upload__button" type="submit">Valider</button>
+            
+        </form>
+
+    </div>
     
 </body>
 </html>
