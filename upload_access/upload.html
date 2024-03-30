@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./upload.css">
     <title>Document</title>
 </head>
-
 <body>
+    <form id="uploadForm" action="upload.php" method="POST" enctype="multipart/form-data">
+        <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple accept="image/*">
+        <button class="file-upload__button" type="submit">Choisir une image</button>
+        <span class="file-upload__label"></span>
+    </form>
     
-
-    <div class="main-title">
-
-        <h1>Accès Restreint</h1>
-
-        <hr class="hr" id="hr-1">
-
-        <p>Ajouter une image</p>
-
-    </div>
-
-    <div class="container">
-        <div class="image-container">
-            <img src="" alt="" id="choosen-img">
-        </div>
-
-
-        <div class="file-upload">
-            <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple accept="image/*">
-            <button class="file-upload__button" type="button">Choisir une image</button>
-            <span class="file-upload__label"></span>
-        </div>
-
-    </div>
-
-
-    <div class="img-previalisation">
-
-        <img src="" alt="" id="img-previalisation">
-    </div>
-    <script src="./upload.js"></script>
 </body>
-
 </html>
