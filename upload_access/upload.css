@@ -50,3 +50,27 @@ body {
 .container form button:hover {
     background-color: #007a6e;
 }
+
+/* Stylisation du bouton de téléchargement de fichier */
+.file-upload__input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #009879;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center; /* Pour centrer le texte */
+}
+
+.file-upload__input:hover {
+    background-color: #007a6e;
+}
+
+/* Stylisation du texte du bouton de téléchargement de fichier */
+.file-upload__input::file-selector-button {
+    font-size: inherit;
+    background-color: red; /* Couleur du texte sur le bouton */
+}
