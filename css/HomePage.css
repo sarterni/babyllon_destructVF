@@ -361,3 +361,9 @@ footer .containerf .sec p {
     align-items: center;
     justify-content: space-between;
 }
+
+#img {
+    display: block;
+    width: 100px;
+    height: auto;
+}

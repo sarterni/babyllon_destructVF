@@ -22,12 +22,11 @@ window.addEventListener("load", function () {
     let textDiapo = document.getElementById("places");
 
     let timer = setInterval(function () {
-        diapo.src = "../img/diapo/" + images[i];
+        diapo.src = "./img/diapo/" + images[i]; // Assurez-vous que le chemin est correct
         textDiapo.innerHTML = texts[i];
         i++;
         if (i == images.length) i = 0;
     }, 5000);
-
 
     var inputField = document.getElementById("input-restricted");
     var button = document.getElementById("go-to-restrcted");
